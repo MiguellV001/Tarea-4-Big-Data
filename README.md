@@ -32,6 +32,26 @@ Explique mostrar MongoDB
     'año': 2021
   }
 
+  db.sales.insertOne({
+  "Invoice Id": "ID-0001",
+  "Branch": "A",
+  "City": "Yangon",
+  "Customer Type": "Normal",
+  "Gender": "Male",
+  "Product Line": "Electronic Accessories",
+  "Unit Price": 55,
+  "Quantity": 3,
+  "Tax 5": 8.25,
+  "Sales": 173.25,
+  "Date": "2019-01-10",
+  "Time": "10:30",
+  "Payment": "Cash",
+  "Cogs": 165,
+  "Gross Margin Percentage": 4.7619,
+  "Gross Income": 8.25,
+  "Rating": 7
+})
+
 ## 3. Implementación de insertar
 Implementación de usuarios
 
