@@ -1,0 +1,130 @@
+Para esta consulta, se buscarán los estudiantes con una edad igual o mayor a 30 años, utilizando el siguiente comando:
+
+db.Estudiante.find({ edad: { $gte: 30 } })
+{
+  _id: ObjectId('691d0b0b4b9e93fdec0e979b'),
+  id: 3,
+  nombre: 'Ana',
+  sexo: 'F',
+  edad: 30,
+  municipio: 'Nechí',
+  departamento: 'Antioquia',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 5495,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0bef4b9e93fdec0e979f'),
+  id: 5,
+  nombre: 'Luis',
+  sexo: 'M',
+  edad: 35,
+  municipio: 'Anorí',
+  departamento: 'Antioquia',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 5040,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0c6b4b9e93fdec0e97a3'),
+  id: 7,
+  nombre: 'Andrés',
+  sexo: 'M',
+  edad: 32,
+  municipio: 'Olaya',
+  departamento: 'Antioquia',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 5501,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0cfa4b9e93fdec0e97a9'),
+  id: 10,
+  nombre: 'Valeria',
+  sexo: 'F',
+  edad: 31,
+  municipio: 'San Juan De Uraba',
+  departamento: 'Antioquia',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 5659,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0d774b9e93fdec0e97ae'),
+  id: 12,
+  nombre: 'Paula',
+  sexo: 'F',
+  edad: 34,
+  municipio: 'Fortul',
+  departamento: 'Arauca',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 81300,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0dd94b9e93fdec0e97b2'),
+  id: 14,
+  nombre: 'Laura',
+  sexo: 'F',
+  edad: 33,
+  municipio: 'Barranquilla',
+  departamento: 'Atlántico',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 8001,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0df64b9e93fdec0e97b4'),
+  id: 15,
+  nombre: 'Héctor',
+  sexo: 'M',
+  edad: 40,
+  municipio: 'Luruaco',
+  departamento: 'Atlántico',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 8421,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0e4b4b9e93fdec0e97ba'),
+  id: 18,
+  nombre: 'Diana',
+  sexo: 'F',
+  edad: 36,
+  municipio: 'Facatativá',
+  departamento: 'Cundinamarca',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 11001,
+  anio: 2025
+}
+
+{
+  _id: ObjectId('691d0f084b9e93fdec0e97c0'),
+  id: 21,
+  nombre: 'Pedro',
+  sexo: 'M',
+  edad: 41,
+  municipio: 'Regidor',
+  departamento: 'Bolivar',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 13580,
+  anio: 2025
+}
+
+
