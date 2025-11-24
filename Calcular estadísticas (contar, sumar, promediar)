@@ -1,0 +1,22 @@
+* Consultas de agregación para calcular estadísticas (contar, sumar, promediar, etc.).
+Podemos contar el total de estudiante.
+
+db.Estudiante.aggregate([{$count: "Total_Estudiante"}])
+{
+  Total_Estudiante: 100
+}
+
+Este comando usa la etapa $group del pipeline de agregación en MongoDB para sumar todas las edades de los estudiantes almacenados en la colección Estudiante.
+
+db.Estudiante.aggregate([{ $group: { _id: null, totalEdades: { $sum: "$edad" }}}])
+{
+  _id: null,
+  totalEdades: 3018
+}
+
+Otra operación posible en este caso consiste en obtener el promedio del código DANE correspondiente a los estudiantes registrados.
+db.Estudiante.aggregate([{$group:{ _id:null, Promedio_codigo_DANE_Estudiante:{$avg: "$codigo_DANE"}}}])
+{
+  _id: null,
+  Promedio_codigo_DANE_Estudiante: 30789.141414141413
+}
