@@ -32,7 +32,7 @@ Explique mostrar MongoDB
     'año': 2021
   }
 
-El código sería el siguiente:
+### El código sería el siguiente:
 
 ## 3. Implementación de insertar
 Implementación de usuarios
@@ -58,8 +58,8 @@ db.usuarios.insertOne ({
 
 ## 4. Implementación de Selección
 
-Es posible seleccionar todos los documentos de la colección mediante el siguiente comando.
-Procedemos a seleccionar a todos el estudiante se edad 33, usamos el siguiente comando.
+### Es posible seleccionar todos los documentos de la colección mediante el siguiente comando.
+### Procedemos a seleccionar a todos el estudiante se edad 33, usamos el siguiente comando.
 
 db.Estudiante.find({ edad: 33})
 {
@@ -92,7 +92,7 @@ db.Estudiante.find({ edad: 33})
 
 ## 5. Implementación de Actualización
 
-para este ejercicio vamos a actualizar municipio del ID 18, actualmente se encuentras así: 
+### Para este ejercicio vamos a actualizar municipio del ID 18, actualmente se encuentras así: 
 
 {
   _id: ObjectId('691d0e4b4b9e93fdec0e97ba'),
@@ -108,8 +108,8 @@ para este ejercicio vamos a actualizar municipio del ID 18, actualmente se encue
   anio: 2025
 }
 
-Para actualizar los documentos procederemos a usar el comando updateOne().
-Actualizaremos con el siguiente guion: 
+### Para actualizar los documentos procederemos a usar el comando updateOne().
+### Actualizaremos con el siguiente guion: 
 
 db.Estudiante.updateOne({ id: 18 }, { $set: { municipio: 'Facatativa' } });
 {
@@ -120,7 +120,7 @@ db.Estudiante.updateOne({ id: 18 }, { $set: { municipio: 'Facatativa' } });
   upsertedCount: 0
 }
 
-Se confirma la actualización cambiar municipio Facatativá mediante el siguiente comando. 
+### Se confirma la actualización cambiar municipio Facatativá mediante el siguiente comando. 
 
 db.Estudiante.findOne({ id: 18 });
 {
@@ -139,7 +139,7 @@ db.Estudiante.findOne({ id: 18 });
 
 ## 6. Implementación de Eliminación de documentos
 
-Para eliminar un documento utilizaremos el comando deleteOne(). En este ejercicio se eliminará el documento cuyo id sea 101.
+### Para eliminar un documento utilizaremos el comando deleteOne(). En este ejercicio se eliminará el documento cuyo id sea 101.
 
 db.usuarios.find()
 {
@@ -156,7 +156,7 @@ db.usuarios.find()
   anio: 2014
 }
 
-Eliminamos y validamos que ya no está.
+### Eliminamos y validamos que ya no está.
 
 db.Estudiante.deleteOne({id: 101});
 {
