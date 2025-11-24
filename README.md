@@ -17,7 +17,7 @@ Para este caso de uso se proponen las siguientes colecciones:
 
 Explique mostrar MongoDB
 
-db.Estudiante.findOne();
+*db.Estudiante.findOne();
 {
   _id: ObjectId('691d03334b9e93fdec0e9794'),
   id: 1,
@@ -30,7 +30,7 @@ db.Estudiante.findOne();
   poblacion: 82000,
   'código DANE': 25286,
   'año': 2021
-}
+}*
 
 ## 3. Implementación de insertar
 Implementación de usuarios
