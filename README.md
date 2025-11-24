@@ -32,9 +32,12 @@ Explique mostrar MongoDB
     'año': 2021
   }
 
+El código sería el siguiente:
 
 ## 3. Implementación de insertar
 Implementación de usuarios
+
+# Se confirma la inserción del nuevo documento.
 
 db.usuarios.insertOne ({
   id: 101,
@@ -55,6 +58,9 @@ db.usuarios.insertOne ({
 
 ## 4. Implementación de Selección
 
+# Es posible seleccionar todos los documentos de la colección mediante el siguiente comando.
+# Procedemos a seleccionar a todos el estudiante se edad 33, usamos el siguiente comando.
+
 db.Estudiante.find({ edad: 33})
 {
   _id: ObjectId('691d160b4b9e93fdec0e9835'),
@@ -69,6 +75,7 @@ db.Estudiante.find({ edad: 33})
   codigo_DANE: 25843,
   anio: 2025
 }
+
 {
   _id: ObjectId('691d17c14b9e93fdec0e985b'),
   id: 98,
@@ -85,6 +92,25 @@ db.Estudiante.find({ edad: 33})
 
 ## 5. Implementación de Actualización
 
+para este ejercicio vamos a actualizar municipio del ID 18, actualmente se encuentras así: 
+
+{
+  _id: ObjectId('691d0e4b4b9e93fdec0e97ba'),
+  id: 18,
+  nombre: 'Diana',
+  sexo: 'F',
+  edad: 36,
+  municipio: 'Bogotá',
+  departamento: 'Cundinamarca',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 11001,
+  anio: 2025
+}
+
+Para actualizar los documentos procederemos a usar el comando updateOne().
+Actualizaremos con el siguiente guion: 
+
 db.Estudiante.updateOne({ id: 18 }, { $set: { municipio: 'Facatativa' } });
 {
   acknowledged: true,
@@ -93,6 +119,8 @@ db.Estudiante.updateOne({ id: 18 }, { $set: { municipio: 'Facatativa' } });
   modifiedCount: 1,
   upsertedCount: 0
 }
+
+Se confirma la actualización cambiar municipio Facatativá mediante el siguiente comando. 
 
 db.Estudiante.findOne({ id: 18 });
 {
@@ -110,6 +138,25 @@ db.Estudiante.findOne({ id: 18 });
 }
 
 ## 6. Implementación de Eliminación de documentos
+
+Para eliminar un documento utilizaremos el comando deleteOne(). En este ejercicio se eliminará el documento cuyo id sea 101.
+
+db.usuarios.find()
+{
+  _id: ObjectId('691f5b718e8a99f0c4c079d7'),
+  id: 101,
+  nombre: 'Alonso',
+  sexo: 'M',
+  edad: 46,
+  municipio: 'Belén De Umbría',
+  departamento: 'Risaralda',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 66088,
+  anio: 2014
+}
+
+Eliminamos y validamos que ya no está.
 
 db.Estudiante.deleteOne({id: 101});
 {
