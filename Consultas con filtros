@@ -1,0 +1,111 @@
+Para esta etapa de la actividad vamos a usar una consulta con el operador de comparación $lt: menor que. Buscaremos las pacientes de sexo masculino menores de 25 años
+db.Estudiante.find({ edad: { $lt: 25}, sexo: "M" })
+{
+  _id: ObjectId('691d0d914b9e93fdec0e97b0'),
+  id: 13,
+  nombre: 'Mateo',
+  sexo: 'M',
+  edad: 21,
+  municipio: 'Tame',
+  departamento: 'Arauca',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 81794,
+  anio: 2025
+}
+{
+  _id: ObjectId('691d0e6c4b9e93fdec0e97bc'),
+  id: 19,
+  nombre: 'Santiago',
+  sexo: 'M',
+  edad: 23,
+  municipio: 'Cicuco',
+  departamento: 'Bolivar',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 13188,
+  anio: 2025
+}
+{
+  _id: ObjectId('691d12a04b9e93fdec0e97f5'),
+  id: 47,
+  nombre: 'Cristian',
+  sexo: 'M',
+  edad: 22,
+  municipio: 'El Doncello',
+  departamento: 'Caqueta',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 18247,
+  anio: 2025
+}
+{
+  _id: ObjectId('691d14654b9e93fdec0e9819'),
+  id: 65,
+  nombre: 'Nelson',
+  sexo: 'M',
+  edad: 24,
+  municipio: 'Macheta',
+  departamento: 'Cundinamarca',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 25426,
+  anio: 2025
+}
+{
+  _id: ObjectId('691d166e4b9e93fdec0e9839'),
+  id: 81,
+  nombre: 'Pablo',
+  sexo: 'M',
+  edad: 24,
+  municipio: 'La Plata',
+  departamento: 'Huila',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 41396,
+  anio: 2025
+}
+{
+  _id: ObjectId('691d17064b9e93fdec0e9849'),
+  id: 89,
+  nombre: 'Kevin',
+  sexo: 'M',
+  edad: 23,
+  municipio: 'Puerto Lopez',
+  departamento: 'Meta',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 50573,
+  anio: 2025
+}
+{
+  _id: ObjectId('691d17cf4b9e93fdec0e985d'),
+  id: 99,
+  nombre: 'Diego',
+  sexo: 'M',
+  edad: 24,
+  municipio: 'Cali',
+  departamento: 'Valle del cauca',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 76001,
+  anio: 2025
+}
+
+
+También es posible combinar múltiples condiciones. En este caso, buscaremos a las estudiantes de sexo femenino cuyo código DANE esté reportado en el departamento correspondiente. La consulta sería la siguiente:
+
+db.Estudiante.find({ codigo_DANE:27372, sexo:"F", departamento:"Choco"})
+{
+  _id: ObjectId('691d142f4b9e93fdec0e9813'),
+  id: 62,
+  nombre: 'Diana',
+  sexo: 'F',
+  edad: 30,
+  municipio: 'Juradó',
+  departamento: 'Choco',
+  pais: 'Colombia',
+  poblacion: 82000,
+  codigo_DANE: 27372,
+  anio: 2025
+}
