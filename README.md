@@ -37,7 +37,7 @@ El código sería el siguiente:
 ## 3. Implementación de insertar
 Implementación de usuarios
 
-# Se confirma la inserción del nuevo documento.
+### Se confirma la inserción del nuevo documento.
 
 db.usuarios.insertOne ({
   id: 101,
@@ -58,8 +58,8 @@ db.usuarios.insertOne ({
 
 ## 4. Implementación de Selección
 
-# Es posible seleccionar todos los documentos de la colección mediante el siguiente comando.
-# Procedemos a seleccionar a todos el estudiante se edad 33, usamos el siguiente comando.
+Es posible seleccionar todos los documentos de la colección mediante el siguiente comando.
+Procedemos a seleccionar a todos el estudiante se edad 33, usamos el siguiente comando.
 
 db.Estudiante.find({ edad: 33})
 {
