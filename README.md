@@ -1,4 +1,4 @@
-# Tarea-4-Big-Data
+### Tarea-4-Big-Data
 1. Descripción del caso de uso
 R//: Para este diseño se selecciona el caso de uso “Almacenamiento de datos de una red social”, ya que MongoDB es especialmente adecuado para manejar información no estructurada, altamente variable y con gran volumen, como perfiles de usuarios, publicaciones, comentarios y reacciones.
 MongoDB permite escalar horizontalmente, agilizar la consulta de documentos complejos y flexibilizar la evolución del modelo de datos sin necesidad de modificar un esquema rígido.
