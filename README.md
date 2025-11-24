@@ -17,20 +17,20 @@ Para este caso de uso se proponen las siguientes colecciones:
 
 Explique mostrar MongoDB
 
-db.Estudiante.findOne();
-{
-  _id: ObjectId('691d03334b9e93fdec0e9794'),
-  id: 1,
-  nombre: 'Miguel Angel',
-  sexo: 'Masculino',
-  edad: 28,
-  municipio: 'Funza',
-  departamento: 'Cundinamarca',
-  pais: 'Colombia',
-  poblacion: 82000,
-  'código DANE': 25286,
-  'año': 2021
-}
+  db.Estudiante.findOne();
+  {
+    _id: ObjectId('691d03334b9e93fdec0e9794'),
+    id: 1,
+    nombre: 'Miguel Angel',
+    sexo: 'Masculino',
+    edad: 28,
+    municipio: 'Funza',
+    departamento: 'Cundinamarca',
+    pais: 'Colombia',
+    poblacion: 82000,
+    'código DANE': 25286,
+    'año': 2021
+  }
 
 ## 3. Implementación de insertar
 Implementación de usuarios
