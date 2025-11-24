@@ -1,4 +1,6 @@
-Para esta etapa de la actividad vamos a usar una consulta con el operador de comparación $lt: menor que. Buscaremos las pacientes de sexo masculino menores de 25 años
+Para esta etapa de la actividad vamos a usar una consulta con el operador de comparación $lt: menor que. 
+Buscaremos las pacientes de sexo masculino menores de 25 años
+
 db.Estudiante.find({ edad: { $lt: 25}, sexo: "M" })
 {
   _id: ObjectId('691d0d914b9e93fdec0e97b0'),
@@ -93,7 +95,9 @@ db.Estudiante.find({ edad: { $lt: 25}, sexo: "M" })
 }
 
 
-También es posible combinar múltiples condiciones. En este caso, buscaremos a las estudiantes de sexo femenino cuyo código DANE esté reportado en el departamento correspondiente. La consulta sería la siguiente:
+También es posible combinar múltiples condiciones. 
+En este caso, buscaremos a las estudiantes de sexo femenino cuyo código DANE esté reportado en el departamento correspondiente. 
+La consulta sería la siguiente:
 
 db.Estudiante.find({ codigo_DANE:27372, sexo:"F", departamento:"Choco"})
 {
