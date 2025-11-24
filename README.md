@@ -53,7 +53,7 @@ db.usuarios.insertOne ({
   insertedId: ObjectId('691f5b718e8a99f0c4c079d7')
 }
 
-**Implementación de Selección
+## 4. Implementación de Selección
 
 db.Estudiante.find({ edad: 33})
 {
@@ -83,7 +83,7 @@ db.Estudiante.find({ edad: 33})
   anio: 2025
 }
 
-**Implementación de Actualización
+## 5. Implementación de Actualización
 
 db.Estudiante.updateOne({ id: 18 }, { $set: { municipio: 'Facatativa' } });
 {
@@ -109,7 +109,7 @@ db.Estudiante.findOne({ id: 18 });
   anio: 2025
 }
 
-**Implementación de Eliminación de documentos
+## 6. Implementación de Eliminación de documentos
 
 db.Estudiante.deleteOne({id: 101});
 {
